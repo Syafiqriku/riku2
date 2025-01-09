@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style2.css">
+
+    <title>Card Hover with Navigation</title>
+    <style>
+        .navbar ul {
+            list-style: none;
+            background-color: transparent;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-color: blue;
+        }
+
+        .navbar li {
+            margin: 0 10px;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        body {
+        	background-image: url(images/nk.jpg);
+
+            font-family: Arial, sans-serif;
+            background-color: #33ccff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 400px;
+            height: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .card-content p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #666;
+           text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+   <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_me.html" target="go-to-about">About</a></li>
+            <li><a href="my_education.html" target="go-to-education">Education</a></li>
+            <li><a href="experience.html" target="go-to-experience">Experience</a></li>
+            <li><a href="gallery.html" target="go-to-gallery">Gallery</a></li>
+            <li><a href="contact.html" target="go-to-contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="cards-container">
+        <div class="card">
+            
+            <div class="card-content">
+                <h3>Internship</h3>
+                <p>For not offering a fuller version sooner, I apologise. My industrial training at Pejabat Tanah dan Jajahan Bachok was one of the most worthwhile experiences of my life. I was exposed to a variety of duties and responsibilities there, which gave me the opportunity to obtain deep understanding of how administrative procedures operate on the inside. My technical proficiency improved with each work, and I also learnt the value of time management, clear communication, and attention to detail. I was able to work alongside seasoned experts, gain knowledge from their experience, and comprehend how different departments work together to accomplish organisational objectivesI was able to develop both professionally and personally during this training experience, which was life-changing. I also gained useful knowledge and skills that I will use in my future undertakings.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            
+            <div class="card-content">
+                <h3>Nasi berlauk</h3>
+                <p>I spent a lot of time assisting my mother in her restaurant, taking on tasks like cheerfully serving patrons, taking and organising orders, and making sure the dining room was tidy and inviting. Additionally, I helped in the kitchen by arranging supplies, preparing food, and keeping a consistent schedule even during peak hours. I gained valuable knowledge about the importance of diligence, teamwork, and delivering exceptional customer service from this fulfilling experience.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            
+            <div class="card-content">
+                <h3>Sell at beach</h3>
+                <p>I helped my uncle sell various items, such as kites, soap bubbles, and other small goods, by setting up displays, attracting customers, and assisting them with their purchases. I also managed the stock, handled payments, and ensured the items were presented in an appealing way, making the experience enjoyable for both children and adults.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
